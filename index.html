@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Payment Form</title>
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,600" rel="stylesheet">
+</head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<body>
+	<div class="payment">
+		<form class="form">
+			<div class="form__header">
+				<p class="form__title">Harold Finch<br><span class="form__subtitle">Your total</span></p>
+				<p class="form__price">88</p>
+			</div>
+
+			<div class="form__info">
+				<label class="form__label">Credit card number<br>
+					<input class="form__credit form__input" type="text" name="credit" required>
+				</label><br>
+
+				<label class="form__label">Expiration date<br>
+					<select class="form__month form__input" name="month" required>
+						<option value="" disabled selected style='display:none;'>Month</option>
+						<option value="January">January</option>
+						<option value="February">February</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select>
+					<select class="form__year form__input" name="year" required>
+						<option value="" disabled selected style='display:none;'>Year</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+					</select>
+				</label><br>
+
+				<label class="form__label">CVV<br>
+					<input class="form__cvv form__input" type="text" min="3" max="4" required>
+					<p class="form__descript">3 or 4 digits - <a class="form__ref" href="#">view example</a></p>
+				</label>
+
+				<div class="form__line"></div>
+
+				<input class="form__submit form__input" type="submit" name="submit" value="Pay">
+				<input class="form__cancel" type="submit" name="cancel" value="Cancel order">
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>

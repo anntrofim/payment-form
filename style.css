@@ -1,0 +1,157 @@
+.payment {
+	font-family: 'Montserrat', sans-serif;
+	width: 800px;
+	height: 600px;
+	background: url(background.png) no-repeat;
+	background-size: cover;
+	position: relative;
+	margin: 0 auto;
+}
+
+.form {
+	box-siizng: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	height: 87%;
+	background-color: #ffffff;
+}
+
+.form__header {
+	width: 100%;
+	height: 70px;
+	background-color: #efe4aa;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.form__title {
+	margin: 0;
+	position: absolute;
+	left: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bold;
+	font-size: 14px;
+	color: #637570;
+}
+
+.form__subtitle {
+	font-weight: normal;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.form__price {
+	margin: 0;
+	position: absolute;
+	right:25px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: 600;
+	font-size: 34px;
+	color: #637570;
+}
+
+.form__price:before {
+	content: "$";
+}
+
+.form__info {
+	padding:  25px;
+}
+
+.form__label {
+	font-size: 13px;
+	color: #889395;
+}
+
+.form__input {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 20px;
+	border: 1.5px solid #b3c1c4;
+	color: #637570;
+	caret-color: #c1b46e;
+}
+
+.form__input:focus {
+	outline: none;
+	border: 1.5px solid #7fcddf;
+}
+
+.form__month {
+	width: 60%;
+	color: #637570;
+}
+
+.form__year {
+	width: 30%;
+	position: absolute;
+	right: 25px;
+	color: #637570;
+}
+
+.form__cvv {
+	width: 30%;
+	margin-bottom: 5px;
+}
+
+.form__descript {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.form__ref {
+	color: inherit;
+}
+
+.form__ref:hover {
+	color: #c1b46e;
+}
+
+.form__line {
+	margin: 30px 0;
+	border-bottom: 1px solid #b3c1c4;
+}
+
+.form__submit {
+	border: none;
+	background-color: #26b167;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.form__submit:hover {
+	background-color: #efe4aa;
+	color: #637570;
+}
+
+.form__submit:focus {
+	border: none;
+}
+
+.form__cancel {
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+	border: none;
+	background-color: transparent;
+	text-decoration: underline;
+	color: #889395;
+	cursor: pointer;
+}
+
+.form__cancel:hover {
+	color: #c1b46e;
+}
+
+.form__cancel:focus {
+	outline: none;
+}
